@@ -1,0 +1,165 @@
+/* Header */
+.header,
+.container {
+  margin: 0;
+  padding: 0;
+  background-color: indigo;
+  box-sizing: border-box;
+}
+
+/* Apply Flexbox to the container */
+.header {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* Set the width of the columns to create a horizontal layout */
+.column {
+  flex: 1; /* This makes columns occupy equal width */
+}
+/* Center the logo within its column */
+.column.is-4 {
+    display: flex;
+    text-align: center;
+  }
+.logo{
+    border-radius: 50%;
+    width: 130px;
+}
+
+/* Optional: If you want to add spacing between the columns */
+.column:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Optional: If you want to center the navigation menu */
+nav {
+  text-align: center;
+}
+
+/* single */
+.portada-img{
+ text-align: center;
+}
+.portada-content{
+    margin: 10px;
+}
+h1{
+    text-align: center;
+    font-size:20px;
+    font-weight: 900;
+}
+/* Front-page */
+.container-front{
+    position: relative;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.horizontal-container {
+    position: relative;
+    padding: 10px;
+    margin: 1px 1px 1px 1px;
+}
+
+.decoration {
+   color: black;
+}
+.text{
+    text-align: center;
+    font-size:20px;
+    font-weight: 900;
+}
+/* footer */
+.footer {
+    background-color:indigo; 
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+   
+}
+.footer .buttons{
+    justify-content: center;
+}
+.footer .buttons li {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer; 
+}
+.footer .buttons li:last-child {
+    margin-right: 0; 
+}
+.footer .buttons img {
+    width: 50px;
+    border-radius: 50%; 
+}
+.footer .buttons .face{
+    width:60px ;
+}
+/* MENU */
+
+.inactive{
+    display: none;
+}
+
+.menu {
+    display: none; 
+}
+
+.main-nav {
+   display: block;
+    
+}
+.menu-nev{
+    display: flex;
+    justify-content: center;
+}
+
+
+.menu-nev ul ul {
+	display: none;
+}
+
+.menu-nev ul li:hover > ul {
+    display: block;
+}
+
+.menu-nev ul ul {
+    display: none;
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    z-index: 99999;
+    width: 180px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+.menu-nev li {
+	position: relative;
+}
+
+@media screen and (max-width: 640px) {
+    .is-4 {
+        width: 33.3333%;
+    }
+
+    .menu{
+        display: block;
+    }
+    .main-nav.inactive{
+        display: none;
+    }
+}
+/* @media screen and (min-width: 768px) {
+    .menu {
+         display: none; 
+    }
+
+    .main-nav {
+        display: block; 
+
+    }
+
+    
+} */
