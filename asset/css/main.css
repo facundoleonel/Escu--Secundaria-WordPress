@@ -74,23 +74,24 @@ h1{
 /* footer */
 .footer,
 .container {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  overflow: hidden;
+  overflow: hidden; */
   margin: 0;
   padding: 0;
   background-color: indigo;
-  box-sizing: border-box;
+  
+  color: aliceblue;
+  text-align: center;
+  overflow: hidden;
 }
-/* .footer {
-    display:flex;
-    background-color:indigo;
-    box-sizing: border-box; 
-    color: aliceblue;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-} */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
 .footer .buttons{
     justify-content: center;
 }
