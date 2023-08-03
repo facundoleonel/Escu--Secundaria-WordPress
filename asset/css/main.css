@@ -50,11 +50,13 @@ h1{
     font-size:20px;
     font-weight: 900;
 }
+
 /* Front-page */
 .container-front{
     position: relative;
     padding: 5px;
     margin-top: 5px;
+    overflow: hidden;
 }
 
 .horizontal-container {
@@ -155,6 +157,7 @@ h1{
 
     .menu{
         display: block;
+        border-radius: 50%;
     }
     .main-nav.inactive{
         display: none;

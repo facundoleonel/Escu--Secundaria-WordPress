@@ -7,7 +7,7 @@
             <?php }
         }?>
     </main>
-    <div class="container-front is-centered" style="border:1px solid blue;" >
+    <div class="container-front is-centered" >
                 <?php 
                 $args = array(
                     'post_type' => 'novedad',
@@ -18,7 +18,7 @@
                 $nov = new WP_Query($args);
                 //Creamos el LOOP
                 if($nov -> have_posts()):
-                 ?> <div class="columns horizontal-container is-centered" style="border:1px solid red;"> <?php
+                 ?> <div class="columns horizontal-container is-centered"> <?php
                     while($nov->have_posts()):
                         $nov->the_post();
                         ?>  
