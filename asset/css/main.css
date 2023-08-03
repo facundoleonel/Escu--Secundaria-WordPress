@@ -74,13 +74,9 @@ h1{
 /* footer */
 .footer,
 .container {
-  /* display: flex;
-  justify-content: center;
-  overflow: hidden; */
   margin: 0;
   padding: 0;
   background-color: indigo;
-  
   color: aliceblue;
   text-align: center;
   overflow: hidden;
@@ -162,6 +158,9 @@ h1{
     }
     .main-nav.inactive{
         display: none;
+    }
+    .footer .buttons .face{
+        width: 80px;
     }
 }
 /* @media screen and (min-width: 768px) {
