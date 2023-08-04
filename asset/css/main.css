@@ -33,7 +33,7 @@
   margin-right: 10px;
 }
 
-
+/*________________________________________________________*/
 /* single */
 .portada-img{
  text-align: center;
@@ -47,6 +47,11 @@ h1{
     font-weight: 900;
 }
 
+p{
+    text-align: justify;
+    margin: 20px; 
+}
+/*________________________________________________________*/
 /* Front-page */
 .container-front{
     position: relative;
@@ -72,7 +77,7 @@ h1{
     font-size:20px;
     font-weight: 900;
 }
-
+/*________________________________________________________*/
 
 /* footer */
 .footer,
@@ -109,7 +114,7 @@ h1{
 .footer .buttons .face{
     width:80px ;
 }
-
+/*________________________________________________________*/
 /* MENU */
 
 .inactive{
@@ -154,7 +159,7 @@ h1{
 .menu-nev li {
 	position: relative;
 }
-
+/*________________________________________________________*/
 @media screen and (max-width: 640px) {
     .is-4 {
         width: 33.3333%;
