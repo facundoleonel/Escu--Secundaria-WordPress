@@ -23,11 +23,11 @@
                         $nov->the_post();
                         ?>  
                             <div class="column is-3 is-centered is-desktop is-mobile">
-                                    <?php the_post_thumbnail('medium'); ?>
-                                        <a class="decoration" href="<?php the_permalink(); ?>">
-                                           <h1 class="text"><?php the_title(); ?></h1> 
-                                            <p><?php the_excerpt(); ?></p>
-                                        </a>
+                                <?php the_post_thumbnail('medium'); ?>
+                                    <a class="decoration" href="<?php the_permalink(); ?>">
+                                        <h1 class="text"><?php the_title(); ?></h1> 
+                                        <p><?php the_excerpt(); ?></p>
+                                    </a>
                             </div>
                     <?php endwhile;
                  ?></div> <?php   
