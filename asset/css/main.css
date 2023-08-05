@@ -175,4 +175,8 @@ p{
     .footer.buttons.face{
         width: 80px;
     }
+
+    nav{
+        width: 100%;
+    }
 }
