@@ -179,14 +179,17 @@ p{
         width: 100%;
     }
     /* __ACA VEMOS COMO HACEMO MENU RESPONSIVE__ */
-    
+
     .columns.is-mobile {
         flex-direction: column; /* Stack columns vertically on smaller screens */
     }
 
     .column.is-1,
-    .column.is-2,
+    .column.is-2 {
+        border: 2px solid transparent;
+        order: 1; /* Remove borders for columns on smaller screens */
+    }
     .column.is-8 {
-        border: 2px solid transparent; /* Remove borders for columns on smaller screens */
+        order: 3; /* Set a negative order to move the .column.is-8 to the front */
     }
 }
