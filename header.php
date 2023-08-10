@@ -9,23 +9,23 @@
 <body>
 <header>
     <div class="container-full bg-00">
-        <div class="columns">
+        <div class="columns is-centered">
             <div class="column is-4">
                 <!-- Inicio -->
                 <div class="columns is-mobile has-text-centered outline-red">
-                    <div class="column is-6-mobile is-6-tablet outline-black">
+                    <div class="column  is-6-mobile is-6-tablet is-6-desktop outline-black">
                         <!-- aca va la IMAGENES DE MENU -->
                         <img src="<?= getIMG("menu-indigo.png")?>" alt="menu" class="menu">
                     </div>
-                    <div class="column is-6 outline-black">
+                    <div class="column  is-6-mobile is-6-tablet is-6-desktop outline-black">
                         <img class="logo" src="<?= getIMG("logo.png")?>" alt="logo"/>
                     </div>
                 </div>
                 <!-- Fin -->
             </div>
-            <div class="column is-8 has-text-centered ">
+            <div class="column is-8 has-text-centered">
                 <nav class="main-nav inactive">
-                    <div class=" menu-nev breadcrumb has-succeeds-separator is-centered" aria-label="breadcrumbs">
+                    <div class=" menu-nev breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
                         <!-- imprimimos el menu -->
                         <?php wp_nav_menu(
                             array(

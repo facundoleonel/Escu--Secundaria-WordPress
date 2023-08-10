@@ -141,6 +141,11 @@ p{
 .menu-nev li {
 	position: relative;
 }
+.column.is-8.has-text-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*________________________________________________________*/
 @media screen and (max-width: 640px) {
     /* .is-4 {
