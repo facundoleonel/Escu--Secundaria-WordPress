@@ -1,37 +1,20 @@
-/* Header */
-.header,
-.container {
-  margin: 0;
-  padding: 0;
-  background-color: indigo;
-  box-sizing: border-box;
-}
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
-/* Apply Flexbox to the container */
-.header {
-  display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
-}
-
-/* Set the width of the columns to create a horizontal layout */
-.column {
-  flex: 1; /* This makes columns occupy equal width */
-}
-/* Center the logo within its column */
-.column.is-4 {
-    display: flex;
-    text-align: center;
-  }
 .logo{
+    width: 150px;
     border-radius: 50%;
-    width: 130px;
 }
-
-/* Optional: If you want to add spacing between the columns */
-.column:not(:last-child) {
-  margin-right: 10px;
+  
+.bg-00 {
+    background: indigo;
 }
+  
+  .container-full {
+    width: 100%;
+    margin:0 auto;
+    padding: 12px;
+    box-sizing: border-box;
+  }
 
 /*________________________________________________________*/
 /* single */
@@ -122,7 +105,7 @@ p{
 }
 
 .menu {
-    display: none; 
+    display: none;
 }
 
 .main-nav {
@@ -160,13 +143,15 @@ p{
 }
 /*________________________________________________________*/
 @media screen and (max-width: 640px) {
-    .is-4 {
+    /* .is-4 {
         width: 33.3333%;
-    }
-
+    } */
     .menu{
         display: block;
         border-radius: 50%;
+        max-width: 50px;
+        margin: 60px;
+        box-sizing: border-box;
     }
     .main-nav.inactive{
         display: none;
@@ -175,21 +160,23 @@ p{
         width: 80px;
     }
 
-    nav{
+    /* nav{
         width: 100%;
-    }
+    } */
+
     /* __ACA VEMOS COMO HACEMO MENU RESPONSIVE__ */
 
-    .columns.is-mobile {
-        flex-direction: column; /* Stack columns vertically on smaller screens */
+    /* .columns.is-mobile {
+        flex-direction: column;
     }
+
 
     .column.is-1,
     .column.is-2 {
         border: 2px solid transparent;
-        order: 1; /* Remove borders for columns on smaller screens */
+        order: 1; 
     }
     .column.is-8 {
-        order: 3; /* Set a negative order to move the .column.is-8 to the front */
-    }
+        order: 3; 
+    } */
 }
