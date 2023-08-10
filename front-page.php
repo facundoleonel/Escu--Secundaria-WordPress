@@ -1,12 +1,20 @@
 <?php get_header();?>
-    <main class="container-front is-multiline is-mobile is-centered" style="border:1px solid blue;">
-        <?php if(have_posts()){
-            while(have_posts()){
-                the_post();?>
-                <?php the_content();?>    
-            <?php }
-        }?>
+    <main>
+        <div class="container-full" style="border:2px solid blue;">
+            <div class="columns">
+                <div class="column img-pri">
+                    <?php if(have_posts()){
+                        while(have_posts()){
+                            the_post();?>
+                            <?php the_post_thumbnail('medium_large'); ?>
+                            <?php the_content();?>    
+                        <?php }
+                    }?>
+                </div>
+            </div>
+        </div>
     </main>
+
     <div class="container-front is-centered" >
                 <?php 
                 $args = array(
