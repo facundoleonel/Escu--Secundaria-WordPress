@@ -1,6 +1,6 @@
 <?php get_header();?>
     <main>
-        <div class="container-full" style="border:2px solid blue;">
+        <div class="container-full">
             <div class="columns">
                 <div class="column img-pri">
                     <?php if(have_posts()){
