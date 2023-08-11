@@ -27,7 +27,7 @@
                         <h3>CONTÁCTANOS</h3>
                         <ul>
                             <li>Av. Alberdi, 435. La Criolla-ER</li>
-                            <li>Tel:4900193</li>
+                            <li>Tel:(0345)4900193</li>
                             <li>escuela5saltogrande@gmail.com</li>
                         </ul>
                     </div> 
