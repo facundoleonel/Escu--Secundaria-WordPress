@@ -12,12 +12,12 @@
                     <div class="column">
                         <ul class="buttons">
                             <li class="face">
-                                <a href="<?=get_facebook_url().'/facebook'?>">
+                                <a href="<?=get_facebook_url().'/facebook'?>" target="_blank">
                                   <img src="<?= getIMG('images.png')?>" alt="facebook" />
                                 </a>
                             </li>
                             <li>
-                                <a href="<?=get_instagram_url().'/instagram'?>">
+                                <a href="<?=get_instagram_url().'/instagram'?>" target="_blank">
                                     <img src="<?= getIMG('icono-instagram.jpg')?>" alt="instagram" />
                                 </a>
                             </li>
