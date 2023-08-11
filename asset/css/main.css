@@ -165,5 +165,9 @@ p{
     .footer.buttons.face{
         width: 80px;
     }
-
+    p.has-text-align-center {
+        width: 350px;
+        display: flex;
+        justify-content: center;
+    }
 }
