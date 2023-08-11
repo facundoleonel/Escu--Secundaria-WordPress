@@ -18,7 +18,9 @@
                         <img src="<?= getIMG("menu-indigo.png")?>" alt="menu" class="menu">
                     </div>
                     <div class="column  is-6-mobile is-6-tablet is-6-desktop outline-black">
-                        <img class="logo" src="<?= getIMG("logo.png")?>" alt="logo"/>
+                        <a href="/">
+                            <img class="logo" src="<?= getIMG("logo.png")?>" alt="logo"/>
+                        </a> 
                     </div>
                 </div>
                 <!-- Fin -->
