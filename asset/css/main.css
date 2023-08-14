@@ -127,7 +127,7 @@ p{
 }
 
 .menu-principal li {
-    margin-right: 15px; /* Ajusta el espacio entre elementos si es necesario */
+    margin-right: 25px; /* Ajusta el espacio entre elementos si es necesario */
 }
 
 .menu-container ul ul {
@@ -142,7 +142,7 @@ p{
     display: none;
     position: absolute;
     top: 1.5em;
-    left: 25px;
+    left: 10px;
     z-index: 99999;
     width: 200px;
     box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
