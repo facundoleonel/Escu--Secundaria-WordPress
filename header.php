@@ -27,7 +27,7 @@
             </div>
             <div class="column is-8 has-text-centered">
                 <nav class="main-nav inactive">
-                    <div class=" menu-nev breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+                    <div class=" menu-container is-spaced">
                         <!-- imprimimos el menu -->
                         <?php wp_nav_menu(
                             array(

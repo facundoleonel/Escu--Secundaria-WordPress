@@ -114,25 +114,31 @@ p{
 .main-nav {
    display: block;
 }
-.menu-nev{
-    display: flex;
-    justify-content: center;
-}
 
-/* Estilos para el menú principal */
 .menu-principal a {
-    color: #ffffff; /* Color blanco */
+    color: #ffffff; 
 }
 
-.menu-nev ul ul {
+.menu-principal {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-principal li {
+    margin-right: 15px; /* Ajusta el espacio entre elementos si es necesario */
+}
+
+.menu-container ul ul {
 	display: none;
 }
 
-.menu-nev ul li:hover > ul {
+.menu-container ul li:hover > ul {
     display: block;
 }
 
-.menu-nev ul ul {
+.menu-container ul ul {
     display: none;
     position: absolute;
     top: 1.5em;
@@ -141,9 +147,25 @@ p{
     width: 200px;
     box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
 }
-.menu-nev li {
+.menu-container li {
 	position: relative;
 }
+
+.menu-container {
+    text-align: center;
+}
+
+.menu-nev {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-nev li { 
+    margin: 0 10px;
+}
+
 .column.is-8.has-text-centered {
     display: flex;
     justify-content: center;
@@ -159,6 +181,16 @@ p{
         margin: 60px;
         box-sizing: border-box;
     }
+
+    .menu-principal {
+        flex-direction: column; /* Muestra los elementos en una columna en pantallas pequeñas */
+    }
+    
+    .menu-principal li {
+        margin-right: 0; /* Elimina el margen entre elementos en pantallas pequeñas */
+        margin-bottom: 10px; /* Agrega un margen inferior entre elementos en pantallas pequeñas */
+    }
+
     .main-nav.inactive{
         display: none;
     }
