@@ -171,6 +171,18 @@ p{
     justify-content: center;
     align-items: center;
 }
+
+
+/* Estilos para el submenú */
+.menu-container .menu-principal li:hover > ul.sub-menu {
+    display: block;
+}
+
+.menu-principal li ul.sub-menu li {
+    width: 100%;
+}
+
+
 /*________________________________________________________*/
 @media screen and (max-width: 640px) {
 
@@ -203,4 +215,24 @@ p{
         justify-content: center;
     }
 
+    .menu-container .menu-principal li ul.sub-menu {
+        position: static;
+        display: none;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .menu-principal li ul.sub-menu li {
+        width: auto;
+    }
+
+    /* Mostrar el submenú al hacer clic en lugar de al pasar el cursor */
+    .menu-container .menu-principal li.menu-item-has-children > a {
+        cursor: pointer;
+    }
+
+    .menu-container .menu-principal li.menu-item-has-children.active ul.sub-menu {
+        display: block;
+    }
 }

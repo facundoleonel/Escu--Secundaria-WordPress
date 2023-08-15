@@ -10,7 +10,7 @@ function getIMG($filename){
             add_theme_support('title-tag');  
         }
         //MENU PRINCIPAL: donde me registra los enlaces permanentes
-        register_nav_menus( array('menu_principal' => 'Menú Principal'));
+        register_nav_menus( array('menu_principal' => 'Menú Principal'));       
 
 
 //Cargamos los  Estilos

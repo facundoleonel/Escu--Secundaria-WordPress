@@ -1,4 +1,4 @@
-// creamos una varible para llamar a la clase MENU
+// creamos una variable para llamar a la clase MENU
 const menuHamICon = document.querySelector('.menu');
 const mobileMenu = document.querySelector('.main-nav'); 
 // toggle: hace que aprezca y desaparezca el MENU
